@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Contest Site</title>
+
+    <link href="style/style.css" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/7fe5123cbe.js" crossorigin="anonymous"></script>
+    <script src="app-js/contest-manager.js"></script>
+
+</head>
+<body>
+    <h2 style="padding: 2px; text-align: center;">Contest Creator</h2>
+    <div class="main" style="margin-left: 0px; height: 40rem;">
+        <div class="left-block" style="border: 2px solid black; height: 100%; padding: 0px">
+            <div class="user-input" style="height: 100%; padding: 5px">
+                <input type="text" placeholder="Problem Name" id="problem-name-in">
+                <textarea placeholder="Problem Description" cols="40" rows="15" style="resize: none;" id="problem-desc-in"></textarea>
+
+                <div>
+                    <h4>Public Test Cases</h4>
+                    <input type="text" placeholder="Public Test Cases" id="public-TC-in">
+                </div>
+
+                <div>
+                    <h4>Private Test Cases</h4>
+                    <input type="text" placeholder="Private Test Cases" id="private-TC-in">
+                </div>
+                <input type="number" placeholder="Point Value" id="point-value-in">
+                <button class="start-contest-btn" onclick="addProblem()">+</button>
+            </div>
+        </div>
+        <div class="right-block" style="border: 2px solid black; height: 100%; overflow: scroll;">
+            <ul class="problem-list" id="problem-list"></ul>
+        </div>
+    </div>
+    <input type="number" placeholder="Contest Duration (s)" style="padding: 10px; margin-left: 1rem; float: left;" id="duration-in">
+    <div class="start-btn-holder">
+        <button class="start-contest-btn" onclick="startContest()"><i class="fa-solid fa-play" style="color: #ffffff;"></i></button>
+    </div>
+</body>
+</html>

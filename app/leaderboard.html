@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Contest Site</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+    <link href="style/style.css" rel="stylesheet">
+    <script src="app-js/DOM-controller.js"></script>
+</head>
+<body>
+    <div style="padding: 10px; width: 100px; float: right;">
+        <p class="timer" id="timer"></p>
+    </div>
+    <div class="leaderboard-container">
+        <table class="table is-narrow" id="leaderboard">
+            <thead>
+                <tr>
+                    <th class="rank">Rank</th>
+                    <th class="name">Username</th>
+                    <th class="score">Score</th>
+                </tr>
+            </thead>
+            <tbody id="rankings">
+
+            </tbody>
+        </table>
+    </div>    
+
+    <script>
+    loadBoard()
+    </script>
+</body>
+</html>

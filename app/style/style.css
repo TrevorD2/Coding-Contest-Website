@@ -1,0 +1,266 @@
+*{margin: 0;}
+:root{
+    font-family: sans-serif;
+    font-size: 16px;
+    --nav-primary: #4f4f4f;
+    --nav-secondary: #343434;
+}
+
+.user-input{
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+    padding: 20px
+}
+
+.user-input input{
+    display: list-item;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-input textarea{
+    display: list-item;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.user-input button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: list-item;
+    padding: 5px;
+    list-style-type: none;
+}
+
+.main{
+    background: #e9e9e9;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    padding-top: 0px;
+}
+
+.left-block{
+    padding: 5px;
+}
+
+.problem-header{
+    min-width: 10rem;
+}
+
+.problem-header select{
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 0.675em 6em 0.675em 1em;
+    background-color: var(--nav-primary);
+    border: 1px solid #202020;
+    border-radius: 0.25rem;
+    color: white;
+    cursor: pointer;
+}
+
+.problem-description {
+    padding: 5px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    overflow: hidden;
+    word-wrap: break-word; /* For older browser support */
+    white-space: pre-wrap;
+}
+
+.control-panel{
+    background: lightgray;
+    text-align: right;
+    padding: 4px;
+}
+
+.languages{
+    background: white;
+    border: 1px solid gray;
+}
+
+.editor-container{
+    width: 900px;
+    height: 540px;
+    margin: 20px right;
+    position: relative;
+}
+
+#editor{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+}
+
+.btn-container{
+    text-align: right;
+    padding: 4px;
+}
+
+.run-btn{
+    background: #3dca50;
+    color: white;
+    padding: 8px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.run-btn:hover{
+    background: #2d953b;
+}
+
+.submit-btn{
+    background: #3da4ca;
+    color: white;
+    padding: 8px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.submit-btn:hover{
+    background: #3287a6;
+}
+
+.test-case-btn{
+    background: #9b9b9b;
+    float: left;
+    color: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.test-case-btn:hover{
+    background: #717171;
+}
+
+.output{
+    padding: 4px;
+    border: 2px solid gray;
+    min-height: 100px;
+    width: 99%;
+    resize: none;
+    border-radius: 5px;
+    list-style-type: none;
+}
+
+.start-btn-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-contest-btn{   
+    width: 3.5rem;
+    border: 0;
+    border-radius: 5px;
+    text-decoration: none;
+    background: var(--nav-primary);
+    color: white;
+    padding: 10px;
+}
+
+.start-contest-btn:hover{
+    background: var(--nav-secondary);
+}
+
+.problem-list{
+    list-style-type: square;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+.problem-list li{
+    padding: 5px;
+}
+
+.table{
+    background-color: var(--nav-primary);
+}
+
+#leaderboard{
+    width: 40rem;
+    padding: 30px;
+    margin: auto;
+}
+
+#leaderboard #rankings .contestant{
+    width: 100%;
+    display: block;
+    clear: both;
+    position: absolute;
+    transition: top 1s; /* Use shorthand for better readability */
+    -moz-transition: top 1s;
+    -webkit-transition: top 1s;
+    -ms-transition: top 1s;
+}
+
+.table thead th{
+    color: white;
+}
+
+.table tbody{
+    background-color: white;
+}
+
+.rank{
+    width: 2rem;
+}
+
+.name{
+    width: 35rem;
+}
+
+.score{
+    width: 2rem;
+}
+
+.leaderboard-container{
+    padding: 0px;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 50rem;
+    overflow: scroll;
+}
+
+.lobby{
+    width: 40rem;
+    padding: 30px;
+    margin: auto;
+    background: var(--nav-primary);
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    max-height: 100%;
+    border-style: ridge;
+
+}
+
+.lobby h2{
+    margin: auto;
+    width: 80%
+}
